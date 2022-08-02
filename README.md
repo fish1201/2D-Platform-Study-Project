@@ -15,10 +15,9 @@
  
  5> 代码的管理：不同方面的代码分开放，例如PlayerMovement控制人物移动,PlayerHealth控制人物死亡, AudioManager中放置所有音乐效果的代码，GameManager控制场景的转换，Collection代码中控制左上角orbtext的变化和orb数量的增加。  
  
- 6> 单例：static ClassName instance;  
+ 6> 单例：  
  
-          Awake(){instance = this;}  
-          
-    若要让该控件在场景转换中不用重复生成，永远不会消失，可以使用DontDestroy方法。  
+ static ClassName instance;  Awake(){instance = this;}    
+ 若要让该控件在场景转换中不用重复生成，永远不会消失，可以使用DontDestroy方法。  
     
  
